@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'karla', sans-serif;
   line-height: 1.6;
-  background: #f4ee0007;
+  background: #f4eee7;
   color: black;
   text-wrap: balance;
   text-align: center;
@@ -186,7 +186,7 @@ Projects
 }
 
 .project-card {
-  background: #fff;
+  background: #f8f6f3;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0px 6px 12px #a38e8423;
@@ -238,6 +238,7 @@ Contact
 .contact .social-icons {
   font-size: 2rem;
   margin-top: 4rem;
+  color:#3a322e;
 }
 
 .contact .details,
@@ -318,6 +319,7 @@ Scroll to top button
   background: #a38e8450;
   color: #f3ede6;
   box-shadow: 0px 10px 20px #a38e8423;
+  transform: scale(1.1);
 }
 
 
