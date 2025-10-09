@@ -51,7 +51,7 @@
         <!-- Section 1: About me -->
         <section class="about" id="about">
             <div class="about-text">
-                <h2 id="about" tabindex="0">Kort om mig</h2>
+                <h2 tabindex="0">Kort om mig</h2>
                 <p>
                     Vid 35-års ålder balanserar jag studier, familj och vänner, träning, återhämtning och allt däremellan. Jag försöker ständigt hitta sätt att utvecklas, lära mig av mina misstag och njuta av de små segrarna längs vägen - även de som andra kanske tar för givna.
                 </p>
@@ -64,7 +64,7 @@
 
         <!-- Section 2: More about -->
         <section class="more-about" id="more-about">
-            <h2 id="more-about" tabindex="0">Lite mer om mig</h2>
+            <h2 tabindex="0">Lite mer om mig</h2>
             <p>
                 Jag har fram till nu levt med odiagnostiserad AuDHD, kämpat med psykisk ohälsa och varit sjukskriven större delen av mitt liv. Mitt förflutna har stundvis varit stökigt och destruktivt, men det har också gett mig erfarenheter, insikter och lärdomar som gjort mig starkare.
             </p>
@@ -108,7 +108,7 @@
         <!-- Section 4: Contact -->
         <section class="contact" id="contact">
             <div class="details">
-                <h2 id="contact" tabindex="0">Hitta mig</h2>
+                <h2 tabindex="0">Hitta mig</h2>
                 <p class="contact-detail">
                     <span class="fa fa-phone"></span> Telefon:
                 </p>
@@ -134,9 +134,15 @@
                 </p>
             </div>
             <div class="form" role="form">
-                <h2 id="form" tabindex="0">Kontakta mig</h2>
-                <form name="contact" netlify netlify-honeypot="bot-field" action="/" method="POST">
+                <h2 tabindex="0">Kontakta mig</h2>
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/">
                     <input type="hidden" name="form-name" value="contact">
+
+                    <p hidden>
+                        <label>Fyll inte i detta fält om du är människa:
+                            <input name="bot-field"></label>
+                    </p>
+
                     <label for="name">Namn:</label>
                     <input type="text" id="name" name="name" required>
                     <label for="email">E-post:</label>
