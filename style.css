@@ -29,7 +29,6 @@ html {
   outline: 2px solid #f3ede6;
   box-shadow: 0px 6px 12px 2px #f3ede623;
   transition: box-shadow 0.3s ease;
-  padding: 0.2rem;
 }
 
 a {
@@ -128,6 +127,13 @@ section h2 {
   text-transform: uppercase;
 }
 
+section h2:focus,
+.scroll-to-top:focus {
+  outline: 2px solid #f3ede6;
+  box-shadow: 0px 6px 12px 2px #f3ede623;
+  transition: box-shadow 0.3s ease;
+}
+
 
 /*
 About
@@ -203,10 +209,15 @@ Projects
   margin-bottom: 1rem;
 }
 
+.project-card a {
+    display: inline-block;
+}
+
 .project-card a:focus {
-  outline: 2px solid #f3ede6;
-  box-shadow: 0 2px 12px 2px #f3ede623;
-  transition: box-shadow 0.3s ease;
+  outline: none;
+  box-shadow: 0 0 0 3px #f3ede6, 0 6px 12px rgba(0,0,0,0.1);
+  transform: translateY(-10px);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 
@@ -232,7 +243,6 @@ Contact
   outline: 2px solid #f3ede6;
   box-shadow: 0px 6px 12px 2px #f3ede623;
   transition: box-shadow 0.3s ease;
-  padding: 0.2rem;
 }
 
 .contact .social-icons {
@@ -341,10 +351,9 @@ footer a:hover {
 }
 
 footer a:focus {
-  outline: 2px solid #f3ede6;
+  outline: 2px solid #c5b6ac;
   box-shadow: 0px 6px 12px #f3ede623;
   transition: box-shadow 0.3s ease;
-  padding: 0.2rem;
 }
 
 
