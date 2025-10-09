@@ -138,12 +138,12 @@
             </div>
             <div class="form" role="form">
                 <h2>Kontakta mig</h2>
-                <form name="contact" netlify netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="kontakt">
+                <form name="contact" netlify netlify-honeypot="bot-field" action="/" method="POST">
+                    <input type="hidden" name="form-name" value="contact">
                     <label for="name">Namn:</label>
                     <input type="text" id="name" name="name" required>
                     <label for="email">E-post:</label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required>
                     <label for="message">Meddelande:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                     <button type="submit">Skicka</button>
